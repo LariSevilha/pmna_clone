@@ -1,0 +1,2 @@
+class BannerAd < ApplicationRecord
+end
