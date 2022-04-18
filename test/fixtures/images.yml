@@ -1,13 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  index: MyString
   imagem: MyString
   cover: false
-  create: 2022-04-18 08:31:01
-  update: 2022-04-18 08:31:01
+  create: 2022-04-18 08:37:19
+  update: 2022-04-18 08:37:19
 
 two:
+  index: MyString
   imagem: MyString
   cover: false
-  create: 2022-04-18 08:31:01
-  update: 2022-04-18 08:31:01
+  create: 2022-04-18 08:37:19
+  update: 2022-04-18 08:37:19

@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'about/index'
+  get 'about/show'
+  get 'home/page_info'
+  get 'about/index'
+  get 'events/index'
+  get 'events/show'
+  get 'news/index'
+  get 'services/index'
   get 'paginas/index'
   get 'album/index'
   get 'video/index'

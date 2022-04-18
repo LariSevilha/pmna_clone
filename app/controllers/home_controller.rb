@@ -1,4 +1,4 @@
 class HomeController < ApplicationController
-  def index
+  def page_info
   end
 end

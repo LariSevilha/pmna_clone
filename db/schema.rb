@@ -10,8 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_14_132935) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_18_134330) do
+  create_table "abouts", force: :cascade do |t|
+    t.text "content"
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "banner_ads", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "books", force: :cascade do |t|
+    t.string "index"
+    t.string "show"
+    t.string "slug"
+    t.string "name"
+    t.text "description"
+    t.date "date_publish"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -21,15 +39,42 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_14_132935) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "photos", force: :cascade do |t|
-    t.string "image"
+  create_table "images", force: :cascade do |t|
+    t.string "index"
+    t.string "imagem"
+    t.boolean "cover"
+    t.datetime "create"
+    t.datetime "update"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "pages", force: :cascade do |t|
+    t.string "url"
+    t.string "title"
+    t.string "imagem"
+    t.string "slug"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "paginas", force: :cascade do |t|
+    t.string "url"
+    t.string "title"
+    t.string "imagem"
+    t.string "slug"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "radios", force: :cascade do |t|
+    t.string "file"
+    t.string "title"
+    t.datetime "date_publish"
+    t.integer "radio_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["radio_id"], name: "index_radios_on_radio_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -39,4 +84,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_14_132935) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "videos", force: :cascade do |t|
+    t.string "index"
+    t.string "url"
+    t.string "title"
+    t.string "slug"
+    t.datetime "date_publish"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "radios", "radios"
 end
