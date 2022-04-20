@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  estilo: MyString
+  order: MyString
+  contents: MyString
+  image: MyString
+  descriptionImage: MyString
+  status: false
+
+two:
+  estilo: MyString
+  order: MyString
+  contents: MyString
+  image: MyString
+  descriptionImage: MyString
+  status: false

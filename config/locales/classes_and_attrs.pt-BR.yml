@@ -1,0 +1,76 @@
+pt-BR:
+  activerecord:
+    models:
+ 
+      Contato:
+        one: "E-mail de Contato"
+        other: "E-mails de Contatos"
+      content_builder_archive:
+        one: "Arquivo de Notícias"
+        other: "Arquivo de Notícias"
+      content_builder:
+        one: "Notícia"
+        other: "Notícias"
+      content_builder_category:
+        one: "Categoria de Notícia"
+        other: "Categorias de Notícia"
+       
+        one: "Usuário"
+        other: "Usuários"
+
+    attributes:
+      album:
+        description: "Descrição"
+        name: "Nome"
+        photos: "Fotos"
+        publish_date: "Data de Publicação"
+        status: "Ativo?"
+      contact:
+        name: "Nome"
+        email: "E-mail"
+        phone: "Telefone"
+        subject: "Assunto"
+        message: "Mensagem"
+      content_builder_archive:
+        name: "Nome"
+        file: "Arquivo"
+      content_builder:
+        content_builder_archives: "Arquivos para notícias"
+        cover_news: "Mostrar na capa?"
+        count_read: "Visualizações"
+        content_builder_category: "Categoria"
+        date_publish: "Data para publicação"
+        summary: "Resumo"
+        title: "Título"
+        written_by: "Escrito por"
+      content_builder_category:
+        name: "Nome"
+      photo:
+        cover: "Capa?"
+        image: "Imagem"
+      user:
+        created_at: "Criado em"
+        name: "Nome"
+        password: "Senha"
+        password_confirmation: "Confirmar senha"
+        updated_at: "Atualizado em"
+      photo:
+     
+      video:
+        title: "Titulo"
+        publish_date: "Data de publicação"
+        link: "Link do vídeo"
+        description: "Descrição"
+        status: "Ativo?"
+      
+      about:
+        about: "Sobre nós"
+        description: "Descrição"
+        title: "Titulo"
+
+      contato:
+        name: "Nome"
+        phone: "Telefone"
+        mensage: "Mensagem"
+
+       

@@ -1,2 +1,0 @@
-class Pagina < ApplicationRecord
-end

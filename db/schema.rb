@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_18_134330) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_20_145038) do
   create_table "abouts", force: :cascade do |t|
     t.text "content"
     t.string "title"
@@ -18,7 +18,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_18_134330) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "banner_ads", force: :cascade do |t|
+  create_table "banners_ads", force: :cascade do |t|
+    t.string "image"
+    t.text "descripion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -32,9 +34,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_18_134330) do
     t.date "date_publish"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image"
   end
 
-  create_table "contacts", force: :cascade do |t|
+  create_table "contatos", force: :cascade do |t|
+    t.string "name"
+    t.string "phone"
+    t.text "mensage"
+    t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -58,11 +65,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_18_134330) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "paginas", force: :cascade do |t|
-    t.string "url"
-    t.string "title"
-    t.string "imagem"
-    t.string "slug"
+  create_table "partial_pages", force: :cascade do |t|
+    t.string "estilo"
+    t.string "order"
+    t.string "contents"
+    t.string "image"
+    t.string "descriptionImage"
+    t.boolean "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -82,10 +91,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_18_134330) do
     t.string "senha"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "email"
   end
 
   create_table "videos", force: :cascade do |t|
-    t.string "index"
     t.string "url"
     t.string "title"
     t.string "slug"
