@@ -35,6 +35,7 @@ RailsAdmin.config do |config|
     delete
     show_in_app
 
+    
    ### Page ###
    config.model "Page" do
     weight -3

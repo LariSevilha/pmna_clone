@@ -7,6 +7,10 @@ ruby "3.0.0"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 gem 'rails_admin'
 gem 'carrierwave'
+gem "friendly_id"
+gem "devise"
+gem  'rails-i18n' ,  "~> 7.0.0"
+ 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
@@ -70,5 +74,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  
 end
 gem "sassc-rails"
