@@ -12,9 +12,18 @@ pt-BR:
       book:
         one: Álbum
         other: Álbums
+      event:
+        one: Evento
+        other: Eventos
       page:
         one: Página
         other: Páginas
+      service_category:
+        one: Categoria de serviço
+        other: Categoria de serviços
+      service:
+        one: Serviço
+        other: Serviços
       video:
         one: Vídeo
         other: Vídeos
@@ -27,6 +36,9 @@ pt-BR:
       user:
         one: Usuário
         other: Usuários
+      header_link:
+        one: Link do topo
+        other: Links do topo
     attributes:
       about:
         content: "Texto"
@@ -44,8 +56,8 @@ pt-BR:
         descriptionImage: "Descrição"
         status: "Ativo?"
       radio:
-        file: "Imagem"
         title: "Título"
+        file: "Arquivo MP3"
         date_publish: "Data de publicação"
         status: "Ativo?"
       video:
@@ -58,6 +70,23 @@ pt-BR:
       banners_ad:
         image: "Imagem"
         descripion: "Descrição"
+      service:
+        name: "Nome"
+        description: "Descrição"
+        url: "Url do serviço"
+        image: "Icone (Imagem)"
+      service_category:
+        name: "Nome"
+        open: "Aberto"
+      event:
+        name_event: "Nome do evento"
+        date_publish: "Data do evento"
+        image: "Imagem do evento"
+        description: "Descrição do evento"
+      header_link:
+        order: "Ordem"
+        title: "Título"
+        image: "Imagem"
   views:
   admin:
     home:

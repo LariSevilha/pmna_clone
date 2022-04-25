@@ -51,10 +51,27 @@ RailsAdmin.config do |config|
     end
   end
 
+   ### Evento ###
+   config.model "Event" do
+    weight -3
+    navigation_label "Mídia Social"
+    list do
+      field :id
+      field :description  
+      field :name_event
+    end
+    edit do
+      field :name_event
+      field :description
+      field :date_publish
+      field :image
+    end
+  end
+
   ### Album ###
   config.model "Book" do
     weight -3
-    navigation_label "Album"
+    navigation_label "Mídia Social"
     list do
       field :id
       field :description  
@@ -69,7 +86,7 @@ RailsAdmin.config do |config|
 ### Video ###
 config.model "Video" do
   weight -3
-  navigation_label "Album"
+  navigation_label "Mídia Social"
   list do
     field :id
     field :title
@@ -80,6 +97,56 @@ config.model "Video" do
     field :date_publish
   end
 end
+
+### Link topo ###
+config.model "HeaderLink" do
+  weight -3
+  list do
+    field :id
+    field :title
+  end
+  edit do
+    field :order
+    field :title
+    field :url
+    field :image
+  end
+end
+
+
+### Serviços ###
+config.model "Service" do
+  weight -3
+  navigation_label "Serviços"
+  list do
+    field :id
+    field :name
+    field :status
+  end
+  edit do
+    field :name
+    field :description
+    field :url
+    field :image
+    field :status
+  end
+end
+ ### categoria serviço ###
+ config.model "ServiceCategory" do
+  weight -3
+  navigation_label "Serviços"
+  list do
+    field :id
+    field :name
+  end
+  edit do
+    field :name
+    field :status
+    field :open
+
+  end
+end
+
   ### Pagina parcial ###
   config.model "PartialPage" do
     weight -3
@@ -127,7 +194,7 @@ end
     ### Banners ###
     config.model "BannersAd" do
       weight -3
-      navigation_label "Banners"
+      navigation_label "Mídia Social"
       list do
         field :id
         field :descripion
@@ -168,14 +235,14 @@ end
      ### Radio ###
      config.model "Radio" do
       weight -3
-      navigation_label "Rádio"
+      navigation_label "Arquivos da rádio"
       list do
         field :id
         field :title
       end
       edit do
-        field :file
         field :title
+        field :file
         field :date_publish
       end
     end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_20_145038) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_25_144121) do
   create_table "abouts", force: :cascade do |t|
     t.text "content"
     t.string "title"
@@ -42,6 +42,24 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_20_145038) do
     t.string "phone"
     t.text "mensage"
     t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "image"
+    t.string "name_event"
+    t.date "date_publish"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "header_links", force: :cascade do |t|
+    t.string "order"
+    t.string "title"
+    t.string "url"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -84,6 +102,24 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_20_145038) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["radio_id"], name: "index_radios_on_radio_id"
+  end
+
+  create_table "service_categories", force: :cascade do |t|
+    t.string "name"
+    t.boolean "status"
+    t.boolean "open"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "services", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "status"
+    t.string "image"
   end
 
   create_table "users", force: :cascade do |t|
