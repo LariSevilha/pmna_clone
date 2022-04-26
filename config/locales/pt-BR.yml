@@ -10,14 +10,17 @@ pt-BR:
         one: Sobre nós
         other: Sobre nós
       book:
-        one: Álbum
-        other: Álbums
+        one: Galeria de fotos
+        other: Galeria de fotos
       event:
         one: Evento
         other: Eventos
       page:
         one: Página
         other: Páginas
+      additional_file:
+        one: Arquivo adicional
+        other: Arquivos adicionais
       service_category:
         one: Categoria de serviço
         other: Categoria de serviços
@@ -49,6 +52,8 @@ pt-BR:
       book:
         name: "Nome"
         description: "Descrição"
+        image: "Imagem"
+        date_publish: "Data de publicação"
       partial_page:
         order: "Ordem"
         contents: "Conteúdos"
@@ -86,6 +91,9 @@ pt-BR:
       header_link:
         order: "Ordem"
         title: "Título"
+        image: "Imagem"
+      additional_file:
+        title: "Titulo do arquivo"
         image: "Imagem"
   views:
   admin:

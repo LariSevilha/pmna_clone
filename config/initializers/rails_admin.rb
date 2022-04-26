@@ -67,7 +67,19 @@ RailsAdmin.config do |config|
       field :image
     end
   end
-
+### arquivos adicionais ###
+config.model "AdditionalFile" do
+  weight -3
+  navigation_label "Mídia Social"
+  list do
+    field :id
+    field :title  
+  end
+  edit do
+    field :title
+    field :image
+  end 
+end
   ### Album ###
   config.model "Book" do
     weight -3
@@ -77,10 +89,11 @@ RailsAdmin.config do |config|
       field :description  
     end
     edit do
+      field :image
       field :name
       field :description
       field :date_publish
-      field :image
+     
     end
   end
 ### Video ###
@@ -173,8 +186,8 @@ end
       field :title
     end
     edit do
-      field :content
       field :title
+      field :content
     end
   end
     ### Usuário ###
@@ -242,8 +255,8 @@ end
       end
       edit do
         field :title
-        field :file
         field :date_publish
+        field :file
       end
     end
     
